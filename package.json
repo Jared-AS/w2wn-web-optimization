@@ -1,0 +1,34 @@
+{
+    "name": "what-to-watch-now",
+    "version": "0.1.0",
+    "description": "Project for learning web optimization",
+    "author": "@jaredas",
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "webpack-dev-server",
+        "build": "webpack"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^4.2.3",
+        "hyperscript": "^2.0.2",
+        "lodash": "^4.17.20",
+        "moment": "^2.24.0",
+        "prettier": "1.19.1",
+        "pretty-quick": "^2.0.1",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
