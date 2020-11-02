@@ -21,7 +21,7 @@ const Carousel = ({ itemsList = [] }) =>
         )
     )
 
-window.addEventListener('DOMContentLoaded', async() => {
+!(async function(document) {
     const mountReference = document.querySelector('.main').lastElementChild
 
     if (!mountReference) {
@@ -30,10 +30,7 @@ window.addEventListener('DOMContentLoaded', async() => {
 
     const trending = await fetchPopularMovies()
     const trendingTV = await fetchPopularTVShows()
-        /*
-          const popular = await fetchPopular()
-          const highestRated = await fetchHighestRated()
-        */
+
     mountReference
         .insertAdjacentElement('afterend', SectionTitle('Trending Movies'))
         .insertAdjacentElement(
@@ -49,12 +46,5 @@ window.addEventListener('DOMContentLoaded', async() => {
                 itemsList: trendingTV,
             })
         )
-        /*
-                    .insertAdjacentElement('afterend', SectionTitle('Most Popular Anime'))
-                    .insertAdjacentElement(
-                      'afterend',
-                      Carousel({
-                        itemsList: popular,
-                      })
-                    )*/
-})
+
+})(document, window)
