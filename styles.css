@@ -125,7 +125,7 @@ ul:hover {
 
 .main h2 {
     color: black;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 body .main .search-input {
@@ -291,20 +291,4 @@ footer a:hover {
     color: white;
     font-size: 8px;
     margin: 0px;
-}
-
-
-/**
- * Media Queries
- *******************************************
- */
-
-@media only screen and (max-width: 600px) {
-    .main h2 {
-        font-size: 24px;
-    }
-    footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 }
