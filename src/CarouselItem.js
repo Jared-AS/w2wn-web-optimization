@@ -2,7 +2,7 @@ import h from 'hyperscript'
 import moment from 'moment'
 
 const relativeDate = dateStr => moment(dateStr, 'YYYY-MM-DD').fromNow()
-const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w200/';
 
 const Controls = ({ slug, youtubeVideoId }) =>
     h(
